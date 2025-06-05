@@ -1,5 +1,5 @@
 # Vision-Transformer-From-Scratch
-
+Vision Transformer has become a potential alternative to CNN, which performs well in image classification. This project is the implementation of Vision Transformer from scratch in PyTorch, based on the paper [AN IMAGE IS WORTH 16X16 WORDS: TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE](https://arxiv.org/pdf/2010.11929).
 # run_train.py
 ```python
 from train import train
