@@ -1,5 +1,14 @@
 # Vision-Transformer-From-Scratch
 Vision Transformer has become a potential alternative to CNN, which performs well in image classification. This project is the implementation of Vision Transformer from scratch in PyTorch, based on the paper [AN IMAGE IS WORTH 16X16 WORDS: TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE](https://arxiv.org/pdf/2010.11929).
+
+# Overview
+You only need run_train.py and run_classify.py to get started after download all .py files and required libraries.
+- vision_transformer.py - the main architecture including EmbeddedPatches, Norm, MultiHeadAttention, MLP, EncoderLayer, TransformerEncoder
+- train.py - preprocessing of image, training loop, and saving the model
+- classify.py - classification of images
+- run_train.py - data preparation and start of training
+- run_classify.py - label
+
 # run_train.py
 ```python
 from train import train
