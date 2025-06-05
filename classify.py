@@ -27,7 +27,7 @@ def classify(folder_name, d_model, num_heads, num_layers, image_path):
     input_tensor = transform(image).unsqueeze(0).to(device)
 
     with torch.no_grad():
-        outputs = model(input_tensor)
-        pred_idx = outputs.argmax(dim=1).item()
+        output = model(input_tensor)
+        pred_idx = output.argmax(dim=1).item()
 
     print(dataset.classes[pred_idx])
