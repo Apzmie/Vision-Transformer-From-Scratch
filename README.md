@@ -4,10 +4,10 @@ Vision Transformer has become a potential alternative to CNN, which performs wel
 # Overview
 You only need run_train.py and run_classify.py to get started after download all .py files and required libraries.
 - vision_transformer.py - the main architecture including EmbeddedPatches, Norm, MultiHeadAttention, MLP, EncoderLayer, TransformerEncoder
-- train.py - preprocessing of image, training loop, and saving the model
+- train.py - preprocessing of images, training loop, and saving the model
 - classify.py - classification of images
 - run_train.py - data preparation and start of training
-- run_classify.py - label
+- run_classify.py - receiving the predicted labels
 
 # run_train.py
 ```python
@@ -43,7 +43,7 @@ d_model = 128
 num_heads = 4
 num_layers = 4
 
-classify(folder_name, d_model, num_heads, num_layers, image_path)
+classify(folder_name, d_model, num_heads, num_layers, image_path)        # 'vit.pth' is required to run
 ```
 ```text
 Cat
