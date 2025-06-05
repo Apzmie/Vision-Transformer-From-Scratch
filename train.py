@@ -37,8 +37,8 @@ def train(folder_name, d_model, num_heads, num_layers, train_num_epochs, train_s
             images = images.to(device)
             labels = labels.to(device)
             optimizer.zero_grad()
-            outputs = model(images)
-            loss = loss_fn(outputs, labels)
+            output = model(images)
+            loss = loss_fn(output, labels)
             loss.backward()
             optimizer.step()
 
