@@ -1,6 +1,6 @@
 from classify import classify
 
-image_path = "cat1.jpg"
+image_path = "cat.jpg"
 
 # The values must be the same as the ones used during training
 folder_name = "folder"
