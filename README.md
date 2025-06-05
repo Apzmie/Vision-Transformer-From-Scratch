@@ -35,7 +35,7 @@ Model saved at epoch 3 with the best loss: 0.0391
 ```python
 from classify import classify
 
-image_path = "image.jpg"
+image_path = "cat1.jpg"
 
 # The values must be the same as the ones used during training
 folder_name = "folder"
